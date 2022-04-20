@@ -43,3 +43,7 @@ Para rodar os testes `Dentro da pasta correspondente ao go.mod`:
 ```
 go test ./...
 ```
+Comando maluco do grpc
+```bash
+ protoc --go_out=application/grpc/pb --go_opt=paths=source_relative --go-grpc_out=aplication/grpc/pb --go-grpc_opt=source_relative --proto_path=application/grpc/protofiles application/grpc/protofiles/*.proto
+```
