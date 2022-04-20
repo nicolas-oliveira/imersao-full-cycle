@@ -1,0 +1,7 @@
+/go
+local
+env
+/bin
+/pkg
+
+/codepix/.pgdata
