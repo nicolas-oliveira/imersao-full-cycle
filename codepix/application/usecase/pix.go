@@ -22,7 +22,7 @@ func (p *PixUseCase) RegisterKey(key string, kind string, accountId string) (*mo
 
 	p.PixKeyRepository.RegisterKey(pixKey)
 
-	if err != nil {
+	if pixKey.ID == "" {
 		return nil, err
 	}
 

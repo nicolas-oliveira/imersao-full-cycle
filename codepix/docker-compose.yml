@@ -9,6 +9,8 @@ services:
       - .:/go/src/
     extra_hosts:
       - 'host.docker.internal:172.17.0.1'
+    # environment:
+      # - HTTP_PROXY=http://172.17.0.1:50051
 
   db:
     image: postgres:9.4
@@ -19,6 +21,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=codepix
+      # - HTTP_PROXY=http://172.17.0.2:5432
     ports:
       - '5432:5432'
 
@@ -28,6 +31,7 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@user.com
       - PGADMIN_DEFAULT_PASSWORD=123456
+      # - HTTP_PROXY=http://172.17.0.3:9000
     ports:
       - '9000:80'
     depends_on:

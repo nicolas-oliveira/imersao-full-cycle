@@ -47,3 +47,17 @@ Comando maluco do grpc
 ```bash
 protoc --go_out=application/grpc/pb --go_opt=paths=source_relative --go-grpc_out=application/grpc/pb --go-grpc_opt=paths=source_relative --proto_path=application/grpc/protofiles application/grpc/protofiles/*.proto 
 ```
+
+Cliente grpc
+```
+evans -r repl
+```
+
+Para inicializar o projeto de CLI do projeto
+```
+/go/bin/cobra-cli init
+```
+Para adicionar um novo argumento da CLI do projeto
+```
+/go/bin/cobra-cli add grpc
+```
