@@ -8,8 +8,8 @@ Você pode obter a aplicação através de `git clone` ou obtendo através do `z
 
 ### Subindo a aplicação
 
-![a](.github/Cadastro-e-consulta%402x.png)
-![a](.github/Dinamica-do-processo%402x.png)
+![Cadastro](.github/Cadastro-e-consulta%402x.png)
+![Dinamica](.github/Dinamica-do-processo%402x.png)
 
 Todo o ambiente é configurado através do docker e do docker-compose que faz o orquestramento.
 
